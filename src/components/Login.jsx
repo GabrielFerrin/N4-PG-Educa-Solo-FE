@@ -1,6 +1,8 @@
 const Login = () => {
   return (
-    <div>Login</div>
+    <div className="login-cmp">
+      <h1>Login</h1>
+    </div>
   )
 }
 export default Login

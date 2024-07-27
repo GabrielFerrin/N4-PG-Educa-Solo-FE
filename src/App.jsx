@@ -5,19 +5,21 @@ import Home from './components/Home'
 import Login from './components/Login'
 import Dashboard from './components/Dashboard'
 import { DataContext } from './context/DataContext'
+import Register from './components/Register'
 
-function App() {
-  const { theme, setTheme } = useContext(DataContext)
+const App = () => {
+  const { theme } = useContext(DataContext)
 
   return (
     <div className={`app ${theme}`}>
       <div className="body-app">
-        <button onClick={() => setTheme('light')}>Claro</button>
-        <button onClick={() => setTheme('dark')}>Oscuro</button>
         <Routes>
-          <Route path="*" element={<Home />} />
-          <Route path='/login' element={<Login />} />
-          <Route path='/dashboard' element={<Dashboard />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/home" element={<Home />} />
+          <Route path="/register" element={<Register />} />
+          <Route path="/dashboard/*" element={<Dashboard />} />
+          <Route path="*" element={<Login />} />
         </Routes>
       </div>
     </div>
