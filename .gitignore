@@ -1,3 +1,6 @@
+# My Ignore List
+.env.local
+
 # Logs
 logs
 *.log
