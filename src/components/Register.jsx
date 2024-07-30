@@ -27,8 +27,6 @@ const Register = () => {
     const formData = new FormData(form.current)
     const data = Object.fromEntries(formData)
     e.preventDefault()
-    console.log('from', e.target.id)
-    console.log('submitting...', data)
     registerMut.mutate(data)
   }
   return (

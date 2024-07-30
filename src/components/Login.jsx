@@ -1,18 +1,40 @@
 import { Link, useNavigate } from "react-router-dom"
 import { DataContext } from "../context/DataContext"
-import { useContext } from "react"
+import { useContext, useEffect } from "react"
 import { useMutation } from "react-query"
 
 const Login = () => {
-  const { loginReq, setUser } = useContext(DataContext)
+  const { loginReq, setUser, verifyTokenReq } =
+    useContext(DataContext)
   const navigate = useNavigate()
+
+  useEffect(() => {
+    const token = localStorage.getItem('token')
+    token && verifyTokenMut.mutate()
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [])
+
   // login API
-  const loginMut = useMutation({
-    mutationFn: loginReq,
+  const loginMut = useMutation(loginReq, {
     onSuccess: (user) => {
       if (user.success) {
         console.log(user)
         localStorage.setItem('token', user.data.token)
+        setUser(user.data)
+        navigate('/dashboard')
+      } else {
+        console.log(user.message)
+      }
+    },
+    onError: (error) => {
+      console.log('There was an error', error)
+    }
+  })
+
+  const verifyTokenMut = useMutation(verifyTokenReq, {
+    onSuccess: (user) => {
+      if (user.success) {
+        console.log(user)
         setUser(user.data)
         navigate('/dashboard')
       } else {
