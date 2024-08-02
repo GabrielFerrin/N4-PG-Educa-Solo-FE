@@ -1,0 +1,128 @@
+/* todo el contenido de course */
+
+.course-componente {
+  padding-inline: .5rem;
+}
+
+/* header del curso */
+.curse-header-cmp {
+  background-color: #1D1C22;
+  color: #FFFFFF;
+  display: flex;
+  padding: 1rem;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  border-radius: .5rem;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.curse-header-name-code span {
+  color: #61CE70;
+}
+
+.curse-header-des-created {
+  margin-top: .2rem;
+  padding-right: 1rem;
+}
+
+.curse-header-des-created h4 {
+  margin-top: .3rem;
+}
+
+.curse-header-des-created span {
+  color: #F4A909;
+}
+
+.course-cmp {
+  background-color: #E9F7FF;
+  border-radius: .5rem;
+  padding-block: .5rem;
+  padding-top: .8rem;
+  padding-inline: 3rem;
+  margin-top: .3rem;
+  display: flex;
+  gap: 3rem;
+  margin-block: .5rem;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.course-cmp:hover {
+  transform: scale(1.02);
+  opacity: 0.8;
+}
+
+.course-cmp:active {
+  opacity: 1;
+  transform: scale(1.01);
+}
+
+.course-name-box {
+  width: 180px;
+}
+
+.course-name-box p {
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+/* checkbox */
+.completado-checkbox {
+  display: flex;
+  gap: .3rem;
+  align-items: center;
+}
+
+.completado-checkbox label {
+  padding-inline: 1rem;
+  background-color: #61CE70;
+  border-radius: 1rem;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 600;
+  height: 25px;
+  display: flex;
+  align-items: center;
+}
+
+.fechas-curse p {
+  font-size: 12px;
+}
+
+/* .fechas-curse h4{
+    font-size: 14px;
+} */
+.fechas-curse span {
+  font-size: 9px;
+  margin-block: 0;
+}
+
+.nota-minima p {
+  font-size: 12px;
+}
+
+/* boton intentos */
+.boton-intentos {
+  display: flex;
+  align-items: center;
+}
+
+.boton-intentos button {
+  padding-inline: 1rem;
+  font-size: 14px;
+  background-color: #002F4C;
+  border-radius: 1rem;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  font-weight: 600;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 140px;
+}

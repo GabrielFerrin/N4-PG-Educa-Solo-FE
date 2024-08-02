@@ -1,0 +1,54 @@
+.activity-cmp {
+    width: 100%;
+    padding-bottom: 2rem;
+}
+
+.activity-info-cmp {
+    background-color: #1D1C22;
+    color: #FFFFFF;
+    padding: 1rem;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.activity-tiempo {
+    color: #61CE70;
+    border-radius: .5rem;
+    padding-block: .2rem;
+    padding-inline: .4rem;
+}
+
+.activity-grade-attempts span {
+    color: #F4A909;
+    border-radius: .5rem;
+    padding-block: .2rem;
+    padding-inline: .4rem;
+}
+
+.activity-cmp button{
+    padding: .5rem;
+    background-color: #002F4C;
+    color: #f7f7f7;
+    border: none;
+    border-radius: 1rem;
+    margin-top: 1rem;
+    justify-self: end;
+}
+
+.wrapper button {
+    padding: .5rem;
+    background-color: #002F4C;
+    color: #f7f7f7;
+    border: none;
+    border-radius: 1rem;
+    padding-inline: 1rem;
+}
+
+.wrapper {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin: 2rem 0;
+}

@@ -1,14 +1,27 @@
+import './Activity.css'
 import { useContext, useEffect } from "react"
 import { DataContext } from "../context/DataContext"
 import QuestionMult from "./QuestionMult"
 import QuestionVideo from "./QuestionVideo"
 import QuestionBool from "./QuestionBool"
 import { useMutation } from "react-query"
+import { Link } from 'react-router-dom'
 
 const Activity = () => {
-  const { activity, newAttempt, createAttemptReq } = useContext(DataContext)
+  const { activity, newAttempt, setAttempt, createAttemptReq,
+    closeAttemptReq, attempt } =
+    useContext(DataContext)
 
   const createAttemptMut = useMutation(createAttemptReq, {
+    onSuccess: (data) => {
+      setAttempt(data)
+    },
+    onError: (error) => {
+      console.log(error)
+    }
+  })
+
+  const closeAttemptMut = useMutation(closeAttemptReq, {
     onSuccess: (data) => {
       console.log(data)
     },
@@ -19,16 +32,28 @@ const Activity = () => {
 
   useEffect(() => {
     if (newAttempt) {
-      console.log('new attempt')
-      createAttemptMut.mutate({activityId: activity._id})
+      createAttemptMut.mutate({ activityId: activity._id })
     }
     // eslint-disable-next-line
   }, [newAttempt])
 
+  const handleClose = () => {
+    console.log(attempt)
+    closeAttemptMut.mutate({ attemptId: attempt._id })
+  }
+
   return (
     <div className="activity-cmp">
-      <h1>Activity</h1>
-      <p>{activity.name}</p>
+      <div className="activity-info-cmp">
+        <div>
+          <h3>{activity.name}</h3>
+          <p>Tiempo: <span className="activity-tiempo">{activity.timeAllowed}m</span></p>
+        </div>
+        <div className="activity-grade-attempts">
+          <p>Nota minima: <span>{activity.minGrade}</span></p>
+          <p>Maximo de intentos: <span>{activity.attempts}</span></p>
+        </div>
+      </div>
       {activity.items.map((item, i) => (
         <div key={item._id}>
           {(() => {
@@ -52,6 +77,12 @@ const Activity = () => {
           })()}
         </div>
       ))}
+      <div className="wrapper">
+        <Link to="/dashboard/courses">
+          <button onClick={handleClose}>
+            Dar por terminado el examen
+          </button></Link>
+      </div>
     </div>
   )
 }

@@ -1,0 +1,143 @@
+.home-cmp {
+  color: var(--text-color);
+  font-family: "Ubuntu", sans-serif;
+  transition: color 0.5s ease, background-color 0.5s ease;
+}
+
+.theme-toggle-btn:hover {
+  transform: scale(1.1);
+}
+
+.header-home-cmp {
+  display: flex;
+  align-items: center;
+  padding: 2.5rem;
+  justify-content: space-between;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.header-home-cmp img {
+  width: 140px;
+  transition: color 1s ease
+}
+
+
+
+.theme-toggle-btn {
+  border: none;
+  background: none;
+  margin-right: 1rem;
+}
+
+.ingresar-boton-cmp {
+  font-family: "Ubuntu", sans-serif;
+  background-color: #61CE70;
+  color: #FFFFFF;
+  padding-inline: 1rem;
+  padding-block: .5rem;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 1rem;
+}
+
+.frases-home-cmp {
+  font-family: "Ubuntu", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.frases-home-cmp h1 {
+  font-size: 3rem;
+  width: 22rem;
+  padding-bottom: 3rem;
+
+}
+
+.frases-home-cmp p {
+  font-size: 1.8rem;
+  width: 22.75rem;
+}
+
+.registrar-cmp {
+  display: flex;
+  justify-content: center;
+  margin-top: 4rem;
+}
+
+.registrar-boton-cmp {
+  font-family: "Ubuntu", sans-serif;
+  padding: 0.5rem 1rem;
+  background-color: #F4A909;
+  color: #E9F7FF;
+  border: none;
+  border-radius: 2.5rem;
+  cursor: pointer;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  transition: background-color .3s ease;
+
+  &:hover {
+      background-color: #48a054;
+  }
+
+  &:active {
+      background-color: #61CE70;
+  }
+}
+
+@media (min-width: 1080px) {
+  .frases-home-cmp h1 {
+    font-size: 5rem;
+    width: 68rem;
+    padding-bottom: 3rem;
+  }
+
+  .frases-home-cmp p {
+    font-size: 1.8rem;
+    width: 43.75rem;
+    padding-bottom: 3rem;
+  }
+
+  .registrar-cmp {
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+  }
+
+  .registrar-boton-cmp {
+    font-family: "Ubuntu", sans-serif;
+    padding: 1.25rem 3.125rem;
+    background-color: #F4A909;
+    color: #E9F7FF;
+    border: none;
+    border-radius: 2.5rem;
+    cursor: pointer;
+    font-size: 1.5625rem;
+    transition: background-color .3s ease;
+
+    &:hover {
+        background-color: #48a054;
+    }
+
+    &:active {
+        background-color: #61CE70;
+    }
+  }
+
+  .ingresar-boton-cmp {
+    font-family: "Ubuntu", sans-serif;
+    padding: 0.625rem 1.875rem;
+    background-color: #61CE70;
+    color: #E9F7FF;
+    border: none;
+    border-radius: 2.5rem;
+    cursor: pointer;
+    font-size: 1.25rem;
+  }
+
+
+}

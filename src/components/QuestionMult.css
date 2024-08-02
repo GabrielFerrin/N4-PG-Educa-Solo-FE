@@ -1,0 +1,33 @@
+.question-mult-cmp {
+    padding: 1rem;
+    background-color: #f7f7f7;
+    border-radius: 1rem;
+    margin-top: 1rem;
+    color: #1d1c22;
+}
+
+.question-mult-cmp h4 {
+    margin-bottom: 1rem; 
+}
+
+.options-cmp {
+    margin-left: 2rem;
+}
+
+.options-cmp label{
+    margin-left: .5rem;
+}
+
+/* guardar respuesta */
+.guardar-respuesta-boton{
+    margin-left: .5rem;
+}
+
+.guardar-respuesta-boton button{
+    background-color: #61CE70;
+    border: none;
+    border-radius: .5rem;
+    padding-block: .2rem;
+    padding-inline: .4rem;
+    cursor: pointer;
+}

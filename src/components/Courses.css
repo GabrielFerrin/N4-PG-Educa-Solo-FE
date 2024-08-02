@@ -1,0 +1,159 @@
+/* main para todos los boxes de los cursos */
+
+.courses-cmp {
+  width: 100%;
+}
+
+.course-cmp {
+  color: #1d1c22;
+}
+
+.courses-main-cmp {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 360px);
+  gap: 1rem;
+}
+
+.course-box-cmp {
+  background-color: #1D1C22;
+  width: 350px;
+  color: #CCCCCC;
+  border-radius: 1.1rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    transform: scale(1.02);
+    opacity: 0.9;
+  }
+
+  &:active {
+    transform: scale(1.01);
+    opacity: 1;
+  }
+}
+
+
+.course-img-cmp {
+  width: 100%;
+  height: 180px;
+}
+
+.course-img-cmp img {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+/* data del curso */
+.course-data-cmp {
+  padding-block: .5rem;
+  padding-inline: 1rem;
+  display: flex;
+  gap: .6rem;
+}
+
+.course-data-cmp>div {
+  width: 50%;
+}
+
+.data-code-course-cmp {
+  font-size: smaller;
+  text-align: center;
+}
+
+.data-code-course-cmp h3 {
+  margin-top: .5rem;
+}
+
+.data-code-course-cmp p {
+  margin-top: .3rem;
+  font-size: 12px;
+}
+
+
+/* display fechas de los cursos */
+.dates-course-cmp {
+  background-color: #3f3f46;
+  display: flex;
+  gap: .3rem;
+  padding: .3rem;
+  border-radius: .3rem;
+}
+
+.dates-course-cmp div {
+  width: 50%;
+}
+
+.dates-box {
+  text-align: center;
+}
+
+/* miniboxes */
+.dates-box div {
+  width: 100%;
+  border-radius: .2rem;
+  border: #1D1C22 solid 1px;
+}
+
+.icono-date {
+  height: 30px;
+}
+
+.number-date {
+  font-size: 50px;
+}
+
+.dia-fecha-date {
+  background-color: #1D1C22;
+  padding: .1rem;
+  font-size: 12px;
+  text-transform: uppercase;
+  border-top-left-radius: .2rem;
+  border-top-right-radius: .2rem;
+  color: black;
+}
+
+.mes-fecha-date {
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.year-fecha-date {
+  background-color: #1D1C22;
+  margin-top: .5rem;
+  padding: .1rem;
+  font-size: 14px;
+  border-bottom-left-radius: .2rem;
+  border-bottom-right-radius: .2rem;
+  color: black;
+}
+
+.progress-bar-cmp {
+  display: block;
+  width: 100%;
+  margin-top: 1.2rem;
+  font-size: 12px;
+}
+
+.progress {
+  background-color: #3f3f46;
+  margin-top: .2rem;
+  width: 100%;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  padding: .3rem;
+  padding-inline: .36rem;
+  border-radius: .8rem;
+}
+
+
+.progress-bar-porcentaje {
+  height: 100%;
+  background-color: white;
+  border-radius: .8rem;
+  min-width: 10px;
+}

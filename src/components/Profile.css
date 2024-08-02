@@ -1,0 +1,106 @@
+.profile-cmp {
+  border-radius: 1rem;
+  overflow-y: auto;
+  padding: 1rem;
+}
+
+.nav-profile-cmp {
+  display: flex;
+  width: auto;
+  justify-content: space-between;
+}
+
+.menu-profile-cmp {
+  padding: 2rem;
+  border-radius: 1rem;
+  margin-top: 1rem;
+  color: var(--text-color);
+  background-color: #1D1C22;
+  width: auto;
+  max-height: 500px;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+}
+
+.photo-profile-cmp {
+  border-radius: 1rem;
+  margin-bottom: 2rem;
+  padding-left: .5rem;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  height: 100px;
+}
+
+.photo-profile-cmp img {
+  border-radius: 1rem;
+  width: 80px;
+}
+
+.datos-profile-cmp {
+  display: flex;
+  flex-direction: column;
+}
+
+.info-profile-box-cmp {
+  display: flex;
+}
+
+.info-profile-cmp {
+  gap: .5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.info-container-cmp {
+  border-radius: 1rem;
+  padding: 0.5rem;
+  color: white;
+  width: 25rem;
+  height: 66px;
+  font-weight: 200;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.info-container-cmp h3 {
+  font-size: 1rem;
+  color: #F4A909;
+}
+
+.info-logo-profile {
+  padding-inline: 1rem;
+}
+
+.info-logo-profile img {
+  width: 120px;
+}
+
+.info-container-cmp-rol {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.info-container-cmp-rol h3,
+.info-container-cmp-rol h2 {
+  font-size: 2rem;
+  color: #61CE70;
+}
+
+.editar-modal {
+  width: 600px;
+  display: flex;
+  justify-content: center;
+  margin-left: 3rem;
+}
+
+.editar-modal button {
+  margin: 1rem;
+  border: none;
+  color: #61CE70;
+  background: transparent;
+  font-size: 22px;
+  cursor: pointer;
+  margin-top: 2rem;
+}

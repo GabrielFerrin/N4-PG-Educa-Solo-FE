@@ -1,0 +1,185 @@
+.login-cmp {
+  color: var(--text-color);
+  font-family: "Ubuntu", sans-serif;
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.header-login-cmp {
+  display: flex;
+  align-items: center;
+  padding: 2.5rem;
+  justify-content: space-between;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.header-login-cmp img {
+  width: 140px;
+  transition: opacity 0.6s ease;
+}
+
+.header-login-cmp img:hover {
+  filter: brightness(1);
+  opacity: 0.7;
+  transform: scale(1.1);
+}
+
+.botones-container {
+  align-items: center;
+  display: flex;
+  gap: 0.5rem
+}
+
+
+.input-box-cmp img {
+
+  width: 25px;
+}
+
+.registrarse-boton-cmp {
+  font-family: "Ubuntu", sans-serif;
+  font-size: .8rem;
+  background-color: #61CE70;
+  color: #FFFFFF;
+  padding-inline: 1rem;
+  padding-block: .5rem;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 1rem;
+  transition: background-color .3s ease;
+
+  &:hover {
+    background-color: #48a054;
+  }
+
+  &:active {
+    background-color: #61CE70;
+  }
+}
+
+.back-btn-cmp {
+  font-family: "Ubuntu", sans-serif;
+  background-color: #d84b41;
+  color: #FFFFFF;
+  padding-inline: 1rem;
+  padding-block: .5rem;
+  border: none;
+  border-radius: 1rem;
+
+}
+
+
+.main-login-cmp {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  margin-top: 200px;
+}
+
+.box-login-cmp h2 {
+  text-align: center;
+  color: var(--text-color);
+  margin-bottom: 1rem;
+}
+
+
+.box-login-cmp form {
+  width: 300px;
+}
+
+/* imput box */
+.input-box-cmp {
+  display: flex;
+  height: 2.5rem;
+  width: 100%;
+  border: #CCCCCC solid 1px;
+  border-radius: .5rem;
+  margin-bottom: 4px;
+}
+
+/* logo de los inputs */
+.logo-input-cmp {
+  background-color: #002F4C;
+  border-top-left-radius: .5rem;
+  border-bottom-left-radius: .5rem;
+  height: 100%;
+  width: 4rem;
+}
+
+.input-box-cmp input {
+  width: 100%;
+  background-color: transparent;
+  padding-left: .5rem;
+  border: none;
+  border-radius: .5rem;
+  outline: none;
+  color: #CCCCCC;
+}
+
+
+.from-button-cmp {
+  background-color: #002F4C;
+  color: #FFFFFF;
+  width: 100%;
+  margin-top: 1rem;
+  padding-block: .6rem;
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: background-color .3s ease;
+
+  &:hover {
+    background-color: #005081;
+  }
+
+  &:active {
+    background-color: #002F4C;
+  }
+}
+
+/* logo de los inputs */
+.logo-input-cmp {
+  background-color: #002F4C;
+  border-top-left-radius: .5rem;
+  border-bottom-left-radius: .5rem;
+  height: 100%;
+  width: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.usuario-icon {
+  height: 100%;
+  object-fit: contain;
+}
+
+.locker-icon {
+  height: 65%;
+  object-fit: contain;
+}
+
+@media (min-width: 1080px) {
+  .registrarse-boton-cmp {
+    font-family: "Ubuntu", sans-serif;
+    font-size: 1rem;
+    padding: 0.625rem 1.875rem;
+    background-color: #61CE70;
+    color: #E9F7FF;
+    border: none;
+    border-radius: 2.5rem;
+    cursor: pointer;
+  }
+
+  .back-btn-cmp {
+    font-family: "Ubuntu", sans-serif;
+    padding: 0.625rem 1.875rem;
+    background-color: #d84b41;
+    color: #E9F7FF;
+    border: none;
+    border-radius: 2.5rem;
+    cursor: pointer;
+    font-size: 1.25rem;
+  }
+}

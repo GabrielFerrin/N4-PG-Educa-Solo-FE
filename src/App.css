@@ -1,14 +1,47 @@
+.body-app {
+  min-height: 100vh;
+}
+
 .app.light {
-  background-color: white;
-  color: black;
+  --bg-color: white;
+  --text-color: #0f0e11;
+  --text-contrast: #e6e9ee;
+  --frame-color: #e6e9ee;
 }
 
 .app.dark {
-  background-color: #282c34;
-  color: white;
+  --bg-color: #000000;
+  --text-color: #E9F7FF;
+  --text-contrast: #1D1C22;
+  --frame-color: #313233;
 }
 
 .app {
   background-color: var(--bg-color);
   color: var(--text-color);
+  transition: all .3s ease;
+}
+
+
+.loader {
+  width: 18px;
+  height: 18px;
+  border: 5px solid #FFF;
+  border-bottom-color: #61CE70;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+  margin-top: .95rem;
+  margin-left: .45rem;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
 }

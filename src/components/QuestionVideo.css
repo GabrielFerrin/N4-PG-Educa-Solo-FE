@@ -1,0 +1,72 @@
+.question-video-cmp {
+	padding: 1rem;
+	background-color: #f7f7f7;
+	border-radius: 1rem;
+	margin-top: 1rem;
+	color: #1d1c22;
+}
+
+.question-video-cmp h4 {
+	margin-bottom: 1rem;
+}
+
+.video-box-cmp {
+	display: flex;
+	justify-content: center;
+	gap: 2rem;
+}
+
+.video-controler-cmp {
+	height: 200px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.video-start-stop-cmp {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
+
+/* controler-prueba */
+.record-ctrl-box {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.record-table-ctrl {
+	background-color: #1d1c22;
+	display: flex;
+	width: auto;
+	padding: .5rem;
+	border-radius: .5rem;
+}
+
+.record-table-ctrl div {
+	display: flex;
+}
+
+.record-table-ctrl button {
+	width: 30px;
+	height: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: none;
+	background: transparent;
+}
+
+.record-table-ctrl button span {
+	font-size: 25px;
+	color: #f7f7f7;
+}
+
+.div-screen-web {
+	padding-inline: .1rem;
+	margin-left: .5rem;
+	margin-right: .5rem;
+	border-left: #f7f7f7 solid 1px;
+	border-right: #f7f7f7 solid 1px;
+}
